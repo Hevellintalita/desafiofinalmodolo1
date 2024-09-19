@@ -1,0 +1,112 @@
+*{
+    margin: 30;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin picture{
+    justify-content: space-evenly;
+}
+
+body{
+    max-width: 0 10%;
+    background-color: #EFEEF3
+
+}
+
+header{
+    font-family: "Kodchasan", sans-serif; 
+    font-weight: 400;
+    background-color: #EFEEF3;
+    @include flexbox();
+    width: 100%;
+    height: 10vh;
+    
+
+    ul{
+        @include flexbox();
+       width: 69vw;
+       list-style: none;
+    }
+}
+    
+.hero {
+    width: 100%;
+  }
+  @media (max-width: 900px) {
+    .hero {
+      height: 80%;
+    }
+  }
+  @media (max-width: 670px) {
+    .hero {
+      display: none;
+    }
+  }
+
+  .container-glicolic{
+     width: 450px;
+     height: 355px;
+     top: 359px;
+     left: 139px;
+     gap: 0px;
+     border-radius: 20px 0px 0px 0px;
+     justify-content: space-between;
+
+  }
+
+@media (max-width:670px){
+  .container-glicolic{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+  }
+}  
+
+  main{
+    font-family: "Kodchasan", sans-serif; 
+    font-weight: 400;
+    color: black;
+    
+  }
+  
+  .container-produtosloreal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+  }
+  
+  @media (max-width: 900px) {
+    .container-favoritos {
+      font-size: 90%;
+      height: 70%;
+    }
+  }
+  
+  @media (max-width: 670px) {
+    .container-favoritos {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 60vh;
+    }
+  }
+  
+ .container-meio{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  aside{
+    width: 20vw;
+  }
+ }
+
+
+
